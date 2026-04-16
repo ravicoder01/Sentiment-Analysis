@@ -1,4 +1,4 @@
-﻿tensorflow-cpu
-numpy==2.4.4
-keras==3.14.0
-streamlit==1.45.0
+﻿tensorflow 2.13.0
+numpy
+keras
+streamlit
