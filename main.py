@@ -14,7 +14,7 @@ word_index= imdb.get_word_index()
 reverse_word_index= {value: key for key, value in word_index.items()}
 
 
-model.load_weights('simple_rnn.keras')
+model.load_model('simple_rnn.keras')
 
 #decoding reviews
 def decoding(text):
