@@ -1,5 +1,7 @@
 # importing module
 
+from pyexpat import model
+
 import tensorflow as tf
 import numpy as np
 from tensorflow.keras.preprocessing import sequence
@@ -11,16 +13,8 @@ from tensorflow.keras.datasets import imdb
 word_index= imdb.get_word_index()
 reverse_word_index= {value: key for key, value in word_index.items()}
 
-from tensorflow.keras.layers import Embedding, SimpleRNN, Dense
-from tensorflow.keras.models import Sequential
 
-model = Sequential([
-    Embedding(10000, 128, input_length=500),
-    SimpleRNN(128, activation='relu'),
-    Dense(1, activation='sigmoid')
-])
-model.build(input_shape=(None, 500))
-model.load_weights('simple_rnn.weights.h5')
+model.load_weights('simple_rnn.keras')
 
 #decoding reviews
 def decoding(text):
