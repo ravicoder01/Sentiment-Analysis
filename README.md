@@ -1,6 +1,6 @@
 # 🎬 Sentiment Analysis Web App (IMDB Reviews)
 
-🚀 Live Demo:  
+🚀 Live Demo:- 
 👉 https://sentiment-analysis-3pcy8vhomecrfbnmpjmgqq.streamlit.app/
 
 ---
